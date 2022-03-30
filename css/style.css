@@ -1,34 +1,42 @@
 *{
     margin: 0;
     box-sizing: border-box;
+    padding: 0;
 }
 body{
-    background-image: url("bg-simplify-section-desktop.svg");
     font-size: 16px;
     font-family: 'Be Vietnam Pro';
+    font-weight: 500px;
 
 }
-nav{
-    height: 25vh;
+header nav{
+    height: 20vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-nav ul{
+header nav h1{
+    display: none;
+}
+
+header nav ul{
     list-style: none;
     text-align: center;
 }
 
-nav ul li{
+header nav ul li{
     display: inline;
     margin-left: 28px;
 }
 
-nav ul li a{
+header nav ul li a{
     text-decoration: none;
     color: rgb(35, 44, 81);
-    font-weight: 500;
+}
+
+header a:hover{
+    color: rgb(143, 148, 167);
 }
 
 .boton{
@@ -39,28 +47,257 @@ nav ul li a{
     color: white;
     background-color: rgb(242, 95, 58);
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.boton:hover{
+    background-color: rgb(248, 133, 104);
 }
 
 .home{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
     align-content: center;
-    height: 75vh;
+    margin: 0 10vw;
 }
 
 .home article{
-    width: 439px;
-    height: auto;
+    width: 31.5vw;
 }
 
-.home article h1{
-    font-size: 58px;
+.home article h2{
+    color: rgb(35, 44, 81);
+    font-size: 3.5em;
     font-weight: 700;
+    letter-spacing: -0.035em;
 }
 
 .home article p{
-    width: 350px;
-
+    margin: 28px 89px 28px 0px;
 }
+
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 99px 10vw;
+}
+
+.about article.info{
+    width: 31vw;
+}
+
+.about article.info h3{
+    color:rgb(35, 44, 81);
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.about article.info p{
+    margin: 36px 96px 0 0;
+}
+
+.about article.lista{
+    width: 35vw;
+}
+
+.about article.lista div span{
+    display: flex;
+    align-items: center;
+}
+
+.about article.lista div span p{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 69px;
+    height: 43px;
+    border-radius: 30px;
+    background-color: rgb(242, 95, 58);
+    margin: 0;
+}
+
+.about article.lista div span h4{
+    margin-left: 23px;
+    color: rgb(35, 44, 81);
+}
+
+.about article.lista div p{
+    margin: 4.5px 0 33px 93px;
+    color: rgb(143, 148, 167);
+    text-align: left;
+}
+
+.testimonios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonios h2{
+    font-size: 2.5em;
+    color:rgb(35, 44, 81);
+    text-align: center;
+}
+
+.testimonios article{
+    display: flex;
+    margin: 110px 0 45px 0;
+}
+
+.testimonios article div{
+    background-color: rgb(249, 249, 249);
+    height: 30vh;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding: 0 28px 39px ;
+    position: relative;
+}
+
+.testimonios article div img{
+    height: 70px;
+    position: absolute;
+    bottom: 195px;
+}
+
+.testimonios article div h4{
+    color: rgb(35, 44, 81);
+}
+
+.testimonios article div p{
+    color: rgb(143, 148, 167);
+    line-height: 156.6%;
+    margin-top: 21px;
+    text-align: center;
+}
+
+.prefooter{
+    align-items: center;
+    background-color: rgb(242, 95, 58);
+    display: flex;
+    height: 30vh;
+    justify-content: space-between;
+    margin-top: 20vh;
+    padding: 0 10vw;
+}
+
+.prefooter h2{
+    color:white;
+    font-size: 2.5em;
+    width: 33.5vw;
+}
+
+.prefooter .btnPrefooter{
+    height: 44px;
+    width: 134px;
+    border: 0px;
+    border-radius: 50vh;
+    color: rgb(242, 95, 58);
+    background-color: white;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.prefooter .btnPrefooter:hover{
+    color:rgb(248, 133, 104);
+}
+
+footer{
+    background-color: rgb(29, 30, 37);
+    height: 32vh;
+    position: relative;
+}
+
+footer section{
+    display: flex;
+    height: inherit;
+    justify-content: space-between;
+    margin: 0 10vw;
+    padding: 53px 0 67px;
+    position: relative;
+}
+
+footer section ul{
+    list-style: none;
+}
+
+
+footer .logoYRedes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer .logoYRedes ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .logoYRedes ul li{
+    color: white;
+    display: inline;
+    font-size: 1.3em;
+}
+
+footer .logoYRedes ul li:hover{
+    color: rgb(242, 95, 58);
+}
+
+footer .navFooter nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer .navFooter nav a{
+    color: white;
+    text-decoration: none;
+    margin-bottom: 12px;
+    font-weight: 400;
+}
+footer .navFooter nav a:hover{
+    color: rgb(242, 95, 58);
+}
+
+footer form input{
+    background-color: white;
+    border: none;
+    border-radius: 50vh;
+    padding: 12.5px 0 12.5px 10px;
+    height: 44px;
+}
+
+footer form button{
+    height: 42px;
+    width: 63px;
+    border: 0;
+    border-radius: 50vh;
+    color: white;
+    background-color: rgb(242, 95, 58);
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+footer form button:hover{
+    background-color: rgb(248, 133, 104);
+}
+
+footer p{
+    color: rgb(143, 148, 167);
+    position: absolute;
+    bottom: 52px;
+    right: 0.10px;
+}
+
+/* ----- media queries ----- */
